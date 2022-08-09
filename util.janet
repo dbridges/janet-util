@@ -8,3 +8,9 @@
      o (:read (p :out) :all)
      c (:wait p)]
     {:code c :out o}))
+
+(defn blank? [a]
+  (or (nil? a) (= a "")))
+
+(defn present? [a]
+  (not (blank? a)))
