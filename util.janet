@@ -14,3 +14,6 @@
 
 (defn present? [a]
   (not (blank? a)))
+
+(defn rest [a]
+  (array/slice a 1))
